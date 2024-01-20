@@ -1,0 +1,36 @@
+本仓库存储了机器学习课设的任务代码，这里是对仓库内各文件及其代码的简要说明：
+   —植物分类_特征工程
+       —Data_Load.py    读取数据集
+       —Defines.py         定义各类超参、PCA降维等功能函数
+       —HOG.py             HOG+PCA降维
+       —LBP.py               LBP+PCA降维 
+       —Image_Process.py    图像预处理
+       —image_processing.py    实验过程中进行图像预处理
+       —SIFT.py              SIFT+词袋模型
+       —Stacking.py       堆叠集成学习
+       —main.py             主函数，按序执行各模块完成任务
+
+   —植物分类_深度学习
+       —植物分类_深度学习.ipynb   主函数
+
+   —DR目标识别_目标检测
+       —回归
+           —config.py       配置相关参数
+           —data.py          数据加载与预处理
+           —model.py       定义了多种模型架构
+           —main.py         主函数，模型训练
+       —目标检测
+           该部分采用了YOLOV5的官方代码进行调优，这里不再解释
+           网址：https://github.com/ultralytics/yolov5
+    
+    —DR目标识别_分割
+       —DR目标识别_分割.ipynb   主函数
+
+    —DR多分类
+          —dr_cam*.py     可视化可解释性分析
+          —grad_cam.py   关注区域可视化
+          —dr_dataset.py  数据加载
+          —dr_inference.py   模型推理得到结果
+          —dr_model.py     模型训练与测试
+          —preprocessing.py     预处理，分割
+          —retrain_Eff/Inc.py      不同网络的主函数
